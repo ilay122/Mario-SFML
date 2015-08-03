@@ -1,0 +1,26 @@
+float player_bottom = player.get_y() + player.get_height();
+float tiles_bottom = tiles.get_y() + tiles.get_height();
+float player_right = player.get_x() + player.get_width();
+float tiles_right = tiles.get_x() + tiles.get_width();
+
+float b_collision = tiles_bottom - player.get_y();
+float t_collision = player_bottom - tiles.get_y();
+float l_collision = player_right - tiles.get_x();
+float r_collision = tiles_right - player.get_x();
+
+if (t_collision < b_collision && t_collision < l_collision && t_collision < r_collision )
+{                           
+//Top collision
+}
+if (b_collision < t_collision && b_collision < l_collision && b_collision < r_collision)                        
+{
+//bottom collision
+}
+if (l_collision < r_collision && l_collision < t_collision && l_collision < b_collision)
+{
+//Left collision
+}
+if (r_collision < l_collision && r_collision < t_collision && r_collision < b_collision )
+{
+//Right collision
+}

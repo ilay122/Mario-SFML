@@ -1,0 +1,35 @@
+﻿Build started 03/08/2015 18:32:10.
+     1>Project "C:\Users\user\Documents\Visual Studio 2013\Projects\sfml6\sfml6\sfml6.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt HUD.cpp
+         HUD.cpp
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\Player.h(11): warning C4099: 'FireBull' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\FireBull.h(8) : see declaration of 'FireBull'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\Monster.h(6): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\Monster.h(7): warning C4099: 'Player' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\Player.h(13) : see declaration of 'Player'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\Map.h(12): warning C4099: 'Monster' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\Monster.h(11) : see declaration of 'Monster'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\Map.h(13): warning C4099: 'Powerup' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\Powerup.h(8) : see declaration of 'Powerup'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\Map.h(16): warning C4099: 'Map' : type name first seen using 'struct' now seen using 'class'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\FireBull.h(6) : see declaration of 'Map'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\HUD.h(14): warning C4099: 'HUD' : type name first seen using 'struct' now seen using 'class'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\Map.h(14) : see declaration of 'HUD'
+     1>HUD.cpp(119): warning C4018: '>=' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\user\Documents\Visual Studio 2013\Projects\sfml6\Release\sfml6.exe" /NOLOGO "sfml-graphics.lib" "sfml-window.lib" "sfml-system.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\user\Documents\Visual Studio 2013\Projects\sfml6\Release\sfml6.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\user\Documents\Visual Studio 2013\Projects\sfml6\Release\sfml6.lib" /MACHINE:X86 /SAFESEH Release\FireBull.obj
+         Release\HUD.obj
+         Release\main.obj
+         Release\Map.obj
+         Release\Monster.obj
+         Release\Player.obj
+         Release\Powerup.obj
+         Generating code
+         Finished generating code
+         sfml6.vcxproj -> C:\Users\user\Documents\Visual Studio 2013\Projects\sfml6\Release\sfml6.exe
+     1>Done Building Project "C:\Users\user\Documents\Visual Studio 2013\Projects\sfml6\sfml6\sfml6.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.60

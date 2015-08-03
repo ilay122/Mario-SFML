@@ -1,0 +1,69 @@
+﻿Build started 18/07/2015 17:08:11.
+     1>Project "C:\Users\user\documents\visual studio 2013\Projects\sfml6\sfml6\sfml6.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp Map.cpp Monster.cpp Player.cpp
+         Player.cpp
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.h(10): warning C4099: 'Monster' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.h(9) : see declaration of 'Monster'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.h(12): warning C4099: 'Map' : type name first seen using 'struct' now seen using 'class'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.h(7) : see declaration of 'Map'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.h(9): warning C4099: 'Map' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.h(12) : see declaration of 'Map'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.h(11): warning C4099: 'Player' : type name first seen using 'struct' now seen using 'class'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.h(6) : see declaration of 'Player'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.cpp(10): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.cpp(44): warning C4244: '=' : conversion from 'const float' to 'int', possible loss of data
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.cpp(51): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.cpp(66): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.cpp(67): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.cpp(69): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Monster.cpp
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.h(9): warning C4099: 'Player' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.h(11) : see declaration of 'Player'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.h(12): warning C4099: 'Map' : type name first seen using 'struct' now seen using 'class'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.h(9) : see declaration of 'Map'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.h(6): warning C4099: 'Player' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.h(11) : see declaration of 'Player'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.h(7): warning C4099: 'Map' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.h(12) : see declaration of 'Map'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.h(9): warning C4099: 'Monster' : type name first seen using 'struct' now seen using 'class'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.h(10) : see declaration of 'Monster'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.cpp(28): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.cpp(29): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.cpp(31): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Map.cpp
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.h(6): warning C4099: 'Player' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.h(11) : see declaration of 'Player'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.h(9): warning C4099: 'Player' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.h(11) : see declaration of 'Player'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.h(10): warning C4099: 'Monster' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.h(9) : see declaration of 'Monster'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.h(12): warning C4099: 'Map' : type name first seen using 'struct' now seen using 'class'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.h(9) : see declaration of 'Map'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.cpp(39): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.cpp(40): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.cpp(60): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.cpp(70): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.cpp(71): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.cpp(73): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         main.cpp
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.h(10): warning C4099: 'Monster' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.h(9) : see declaration of 'Monster'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.h(12): warning C4099: 'Map' : type name first seen using 'struct' now seen using 'class'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.h(7) : see declaration of 'Map'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.h(9): warning C4099: 'Map' : type name first seen using 'class' now seen using 'struct'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\map.h(12) : see declaration of 'Map'
+     1>c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\player.h(11): warning C4099: 'Player' : type name first seen using 'struct' now seen using 'class'
+                 c:\users\user\documents\visual studio 2013\projects\sfml6\sfml6\monster.h(6) : see declaration of 'Player'
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\user\documents\visual studio 2013\Projects\sfml6\Debug\sfml6.exe" /INCREMENTAL /NOLOGO "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\user\documents\visual studio 2013\Projects\sfml6\Debug\sfml6.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\user\documents\visual studio 2013\Projects\sfml6\Debug\sfml6.lib" /MACHINE:X86 Debug\main.obj
+         Debug\Map.obj
+         Debug\Monster.obj
+         Debug\Player.obj
+         sfml6.vcxproj -> C:\Users\user\documents\visual studio 2013\Projects\sfml6\Debug\sfml6.exe
+     1>Done Building Project "C:\Users\user\documents\visual studio 2013\Projects\sfml6\sfml6\sfml6.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.86
