@@ -340,8 +340,8 @@ void HUD::getdir(std::vector<std::string> &out, const std::string &directory){
 			continue;
 		if (file_name.size() < 5)
 			continue;
-		//if (file_name.substr(file_name.size()-4) != ".txt")
-			//continue;
+		if (file_name.substr(file_name.size()-4) != ".txt")
+			continue;
 		if (is_directory)
 			continue;
 
