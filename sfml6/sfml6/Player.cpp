@@ -19,7 +19,7 @@ Player::Player()
 	jumpingspeed = 0;
 	time = 0;
 	cangethurt = true;
-
+	this->gravity = 1.5;
 
 }
 
@@ -30,7 +30,8 @@ Player::~Player()
 
 int Player::update(sf::Keyboard& key,Map& map,sf::RenderWindow& win){
 	bool clicked = false;
-	shape.move(Gravity);
+	this->gravitySpeed += gravity;
+	
 	if (key.isKeyPressed(sf::Keyboard::Right)){
 		shape.move(playerSpeed, 0);
 		
@@ -55,16 +56,17 @@ int Player::update(sf::Keyboard& key,Map& map,sf::RenderWindow& win){
 	if (!isJumping){
 		if (key.isKeyPressed(sf::Keyboard::Space) && !spacepressed){
 			isJumping = true;
-			jumpingspeed = -jumpHeight;
+			gravitySpeed = -jumpHeight;
 			clicked = true;
-			shape.move(0, -10);
+			//shape.move(0, -10);
 		}
 		
 	}
 	else{
-		shape.move(0, jumpingspeed);
-		jumpingspeed++;
+		//shape.move(0, gravitySpeed);
+		gravitySpeed++;
 	}
+	shape.move(0, gravitySpeed);
 	spacepressed = key.isKeyPressed(sf::Keyboard::Space);
 	
 
@@ -115,7 +117,7 @@ int Player::update(sf::Keyboard& key,Map& map,sf::RenderWindow& win){
 						isJumping = false; 
 						isJumpingmini = false;
 						if (bigmario || firemario){
-							shape.setPosition(shape.getPosition().x, here.getPosition().y - here.getGlobalBounds().height-22);
+							shape.setPosition(shape.getPosition().x, here.getPosition().y - here.getGlobalBounds().height-shape.getGlobalBounds().height/3);
 							
 						}
 						else{
@@ -145,6 +147,7 @@ int Player::update(sf::Keyboard& key,Map& map,sf::RenderWindow& win){
 								}
 							}
 						}
+						this->gravitySpeed = 0;
 						//top collision
 					}
 					
@@ -163,13 +166,13 @@ int Player::update(sf::Keyboard& key,Map& map,sf::RenderWindow& win){
 						if (map.map[i].at(j) == '?'){
 							score += 100;
 							isJumping = false;
-							jumpingspeed = 0;
+							gravitySpeed = 0;
 							map.map[i][j] = 'e';
 						}
 						if ((bigmario || firemario) && map.map[i].at(j) == '2'){
 							map.map[i][j] = ' ';
 							isJumping = false;
-							jumpingspeed = 0;
+							gravitySpeed = 0;
 						}
 						//bottom collision
 					}
@@ -180,7 +183,7 @@ int Player::update(sf::Keyboard& key,Map& map,sf::RenderWindow& win){
 					}
 					if (r_collision < l_collision && r_collision < t_collision && r_collision < b_collision)
 					{
-						shape.setPosition(here.getPosition().x +here.getGlobalBounds().width+ 2, shape.getPosition().y);
+						shape.setPosition(here.getPosition().x +here.getGlobalBounds().width, shape.getPosition().y);
 						
 						//right collision
 					}
@@ -248,7 +251,7 @@ bool Player::getHurt(Map& map){
 	return false;
 }
 void Player::minijump(){
-	jumpingspeed = -jumpHeight;
+	gravitySpeed = -jumpHeight;
 	isJumping = true;
 }
 void Player::getPowered(){
@@ -265,12 +268,14 @@ void Player::getPowered(){
 void Player::restart(){
 	cangethurt = true;
 	time = 0;
+	gravitySpeed = 0;
 	shape.setTextureRect(sf::IntRect(188, 0, 18, 18));
 	shape.setPosition(playerstartpos);
 	firemario = false;
 	bigmario = false;
 	isJumping = false;
 	goright = true;
+	restartLife();
 }
 bool Player::isjumping(){
 	return isJumping;

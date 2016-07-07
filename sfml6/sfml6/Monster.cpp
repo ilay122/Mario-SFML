@@ -17,6 +17,8 @@ Monster::Monster(sf::Texture* texture,int type,bool moveright,int x,int y)
 	shape.setScale(1.55, 1.55);
 	//shape.setScale(5, 5);
 	shape.setPosition(x*32,y*32-1);
+	this->gravity = 1.5;
+	//FUCK YOU GRAVITYYYYYYYYYYYYY..
 }
 
 
@@ -27,8 +29,8 @@ bool Monster::update(Player& player,Map& map){
 	
 	
 	if (active && map.viewrect.intersects(shape.getGlobalBounds())){
-		
-		shape.move(monGravity);
+		this->gravitySpeed += this->gravity;
+		shape.move(0,this->gravitySpeed);
 		if (movingRight){
 			shape.move(MonsterSpeed, 0);
 		}
@@ -57,6 +59,7 @@ bool Monster::update(Player& player,Map& map){
 						if (t_collision < b_collision && t_collision < l_collision && t_collision < r_collision)
 						{
 							shape.setPosition(shape.getPosition().x, here.getPosition().y - here.getGlobalBounds().height+5);
+							this->gravitySpeed = 0;
 							//top collision
 						}
 						if (b_collision < t_collision && b_collision < l_collision && b_collision < r_collision)

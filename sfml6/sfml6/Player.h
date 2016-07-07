@@ -5,7 +5,7 @@
 #include "FireBull.h"
 const float playerSpeed = 8.f;
 const sf::Vector2f Gravity(0,6.5);
-const float jumpHeight = 22.f;
+const float jumpHeight = 25.f;
 const sf::Vector2f playerstartpos(100,100);
 struct Map;
 struct FireBull;
@@ -45,6 +45,8 @@ private:
 	bool firemario;
 	int jumpingspeed2;
 	bool isJumpingmini;
+	float gravity;
+	float gravitySpeed;
 
 	bool zpressed;
 };

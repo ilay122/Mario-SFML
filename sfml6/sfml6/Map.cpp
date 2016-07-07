@@ -195,6 +195,7 @@ void Map::addPowerUp(int x, int y, int type){
 }
 void Map::restart(){
 	setLevel(clevel);
+	player->restart();
 }
 void Map::setHUD(HUD* hud){
 	this->hud = hud;

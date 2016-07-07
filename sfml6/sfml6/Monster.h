@@ -16,6 +16,8 @@ public:
 	int type;
 	int state;
 	bool movingRight;
+	float gravitySpeed;
+	float gravity;
 
 	bool update(Player& player,Map& map);
 	void draw(sf::RenderWindow& win);
